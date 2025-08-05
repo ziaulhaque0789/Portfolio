@@ -6,21 +6,29 @@ Template Name: budget
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html <?php language_attributes(); ?>>
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Budget for Bright Future I</title>
+    
+     <link rel="icon" href="https://brightfuturei.com/wp-content/uploads/2025/08/favicon-32x32-1.png" />
+  <meta charset="<?php bloginfo( 'charset' ); ?>" />
+  <title><?php wp_title( '|', true, 'right' ); bloginfo( 'name' ); ?></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Apparel Merchandiser & Front-End Web Developer">
+  <meta name="google-site-verification" content="bSm9zi7N_x5tGjXuBwtZr64Q8Yhur5U-BSqCwdchvW0" />
+  <meta name="google-adsense-account" content="ca-pub-3602557870695275">
+  <link rel="apple-touch-icon" href="https://brightfuturei.com/wp-content/uploads/2025/07/logo.png" />
+  
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
   <style>
     body {
-      background: linear-gradient(to right, #e0eafc, #cfdef3);
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       padding: 40px 20px;
+      color: white;
     }
     .container {
       max-width: 960px;
-      background: white;
+      background: #ffffff15;
       border-radius: 16px;
       box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
       padding: 30px;
@@ -59,7 +67,7 @@ Template Name: budget
 <body>
   <div class="container" id="budgetContent">
     <!-- Top Right Date -->
-    <div class="date-top-right" id="currentDate"></div>
+    <div class="date-top-right text-white " id="currentDate"></div>
 
     <h2 class="text-center py-5 mb-4">Budget for Bright Future I</h2>
 
@@ -113,13 +121,6 @@ Template Name: budget
             <option value="Handling Charge">Handling Charge</option>
              <option value="System Charge">System Charge</option>
                <option value="Others">Others</option>
-
-
-      
-
-
-
-          Allover Print
         </select>
       </div>
       <div class="col-md-2">
@@ -143,7 +144,7 @@ Template Name: budget
       </div>
     </div>
 
-    <div class="table-responsive mb-3">
+    <div class="table-responsive rounded-3 mb-3">
       <table class="table table-bordered">
         <thead class="table-secondary">
           <tr>
@@ -159,7 +160,7 @@ Template Name: budget
         </thead>
         <tbody id="budgetTable"></tbody>
         <tfoot>
-          <tr>
+           <tr class="rounded-3">
             <td colspan="4" class="text-end fw-bold">Grand Total</td>
             <td colspan="4" id="grandTotal" class="fw-bold text-center">0</td>
           </tr>
