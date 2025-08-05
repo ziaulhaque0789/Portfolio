@@ -164,7 +164,7 @@
         </a>
       </div>
 
-      <div class="col-12">
+      <div class="col-6">
         <a href="https://brightfuturei.com/tna/" class="text-decoration-none">
          <div class="p-4 text-center feature-box">
           <h6 class="mb-2">TNA</h6>
@@ -172,6 +172,16 @@
         </div>
         </a>
       </div>
+      
+      <div class="col-6">
+        <a href="https://brightfuturei.com/budget/" class="text-decoration-none">
+         <div class="p-4 text-center feature-box">
+          <h6 class="mb-2">BUDGET</h6>
+          <button class="btn btn-outline-info w-100">Calculate</button>
+        </div>
+        </a>
+      </div>
+      
     </div>
   </div>
 
